@@ -28,7 +28,7 @@
             .then(data => {
                 localStorage.setItem("product", JSON.stringify(data));
                 //console.log('product:', data)
-                const product = JSON.parse(localStorage.getItem("product"));
+                var product = JSON.parse(localStorage.getItem("product"));
             })
             .catch(err => {
                 console.log('check error: ', err.message)
