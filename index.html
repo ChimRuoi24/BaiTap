@@ -9,18 +9,21 @@
 
     <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-    <header>
-        <div id="page-logo">
-            <a href="index.html">
-                <img id="brand-image" src="logo.png" alt="Furniro icon">
-                <h1 id="brand-name">Furniro</h1>
-            </a>
+    <script type="text/javascript" src="index.js" defer></script>
+
+    <header class="header">
+        <div id="page-logo" class="nav-bar">
+            <a class="nav-bar-logo" href="index.html"><img id="brand-image" src="logo.png" alt="Furniro icon"></a>
+            <a id="brand-name" class="nav-bar-logo" href="index.html"><h1>Furniro</h1></a>
         </div>
 
-        <nav id="page-nav">
+        <nav id="page-nav" class="nav-bar">
             <ul id="page-nv-list">
                 <li><a href="index.html" id="home-link" class="top-page-link">Home</a></li>
                 <li><a href="shop.html" id="shop-link" class="top-page-link">Shop</a></li>
@@ -29,12 +32,12 @@
             </ul>
         </nav>
         
-        <nav id="support-nav">
+        <nav id="support-nav" class="nav-bar">
             <ul id="support-nav-list">
-                <li><a href=""><span class="material-symbols-outlined">person-alert</span></a></li>
-                <li><a href="blog.html"><span class="material-symbols-outlined">search</span></a></li>
+                <li><a href=""><img src="user.png" alt=""></a></li>
+                <li><a href=""><span class="material-symbols-outlined">search</span></a></li>
                 <li><a href=""><span class="material-symbols-outlined">favorite</span></a></li>
-                <li><a href="cart.html"><span class="material-symbols-outlined">shopping-cart</span></a></li>
+                <li><a href="cart.html"><img src="cart.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -42,106 +45,155 @@
     <main>
         <section id="hero">
             <div id="hero-inform-box">
-                <p id="hero-box-heading-2">New arrival</p>
+                <p id="hero-box-heading-2">New Arrival</p>
                 <h1 id="hero-box-heading-1">Discover Our New Collection</h1>
                 <p id="hero-box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
                 <button id="hero-buy-now-button">BUY NOW</button>
             </div>
         </section>
 
+        <img id="hero-background" src="hero.png" alt="">
+
         <section id="section-2">
             <h2 id="sec-2-heading">Browse The Range</h2>
             <p id="sec-2-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-            <div class="room">
-                <img class="room-image" id="dining-image" src="dining.png" alt="Dining room">
-                <h5 class="room-name">Dining</h5>
-            </div>
+            <ul class="product-range">
+                <li id="dining">
+                    <div class="room" >
+                        <img class="room-image" id="dining-image" src="dining.png" alt="Dining room">
+                        <h5 class="room-name">Dining</h5>
+                    </div>
+                </li>
 
-            <div class="room">
-                <img class="room-image" id="living-image" src="living.png" alt="Living room">
-                <h5 class="room-name">Living</h5>
-            </div>
+                <li id="living">
+                    <div class="room">
+                        <img class="room-image" id="living-image" src="living.png" alt="Living room">
+                        <h5 class="room-name">Living</h5>
+                    </div>
+                </li>
 
-            <div class="room">
-                <img class="room-image" id="bedroom-image" src="bedroom.png" alt="Bedroom">
-                <h5 class="room-name">Bedroom</h5>
-            </div>
+                <li id="bedroom">
+                    <div class="room">
+                        <img class="room-image" id="bedroom-image" src="bedroom.png" alt="Bedroom">
+                        <h5 class="room-name">Bedroom</h5>
+                    </div>
+                </li>
+            </ul>
         </section>
 
-        <section id="section-3">
+        <section id="section-3" class="sec-3">
             <h2 id="sec-3-heading">Our Products</h2>
 
-            <div class="row">
-                <div class="product-container" id="sylthe">
-                    <img class="product-image" src="sylthe.png" alt="Sylthe">
-                    <span class="sale">
-                        <p>-30%</p>
-                    </span>
-
-                    <h3 class="product-name">Sylthe</h3>
-                    <p class="product-description">Stylish cafe chair</p>
-                    <h4 class="product-price">Rp 2.500.000</h4>
-                    <p class="product-old-price"><del>Rp 3.500.000</del></p>
-                </div>
-                
-                <div class="product-container" id="leviosa">
-                    <img class="product-image" src="leviosa.png" alt="Leviosa">
-                    
-                    <h3 class="product-name">Leviosa</h3>
-                    <p class="product-description">Stylish cafe chair</p>
-                    <h4 class="product-price">Rp 2.500.000</h4>
-                </div>
-
-                <div class="product-container" id="lolito">
-                    <img class="product-image" src="lolito.png" alt="Lolito">
-                    <span class="sale">
-                        <p>-50%</p>
-                    </span>
-
-                    <h3 class="product-name">Lolito</h3>
-                    <p class="product-description">Luxury big sofa</p>
-                    <h4 class="product-price">Rp 7.000.000</h4>
+            <div class="products">
+                <div class="container">
+                    <div class="product-utility">
+                        <button class="product-cart">Add to Cart</button>
+                        <div class="like-share-compare">
+                            <div><i class="fa-solid fa-share-nodes"></i>Share</div>
+                            <div><i class="fa-solid fa-code-compare"></i>Compare</div>
+                            <div><i class="fa-solid fa-heart" class="heart"></i>Like</div>
+                        </div>
+                    </div>
+                    <div class="product-container" id="sylthe">
+                        <img class="product-image" src="sylthe.png" alt="Sylthe">
+                        <div class="sale"><span><p>-30%</p></span></div>
+                        
+                        <h3 class="product-name">Sylthe</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                        <p class="product-old-price"><del>Rp 3.500.000</del></p>
+                    </div>
                 </div>
 
-                <div class="product-container" id="respira">
-                    <img class="product-image" src="respira.png" alt="Respira">
-                    <span class="new">
-                        <p>New</p>
-                    </span>
+                <div class="container">
+                    <div class="product-utility">
+                        <button class="product-cart">Add to Cart</button>
+                        <div class="like-share-compare">
+                            <div><i class="fa-solid fa-share-nodes"></i>Share</div>
+                            <div><i class="fa-solid fa-code-compare"></i>Compare</div>
+                            <div><i class="fa-solid fa-heart" class="heart"></i>Like</div>
+                        </div>
+                    </div>
+                    <div class="product-container" id="leviosa">
+                        <img class="product-image" src="leviosa.png" alt="Leviosa">
+                        
+                        <h3 class="product-name">Leviosa</h3>
+                        <p class="product-description">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                    </div>
+                </div>
 
-                    <h3 class="product-name">Respira</h3>
-                    <p class="product-description">Outdoor bar table and stool</p>
-                    <h4 class="product-price">Rp 500.000</h4>
+                <div class="container">
+                    <div class="product-utility">
+                        <button class="product-cart">Add to Cart</button>
+                        <div class="like-share-compare">
+                            <div><i class="fa-solid fa-share-nodes"></i>Share</div>
+                            <div><i class="fa-solid fa-code-compare"></i>Compare</div>
+                            <div><i class="fa-solid fa-heart" class="heart"></i>Like</div>
+                        </div>
+                    </div>
+                    <div class="product-container" id="lolito">
+                        <img class="product-image" src="lolito.png" alt="Lolito">
+                        <div class="sale"><span><p>-50%</p></span></div>
+        
+                        <h3 class="product-name">Lolito</h3>
+                        <p class="product-description">Luxury big sofa</p>
+                        <h4 class="product-price">Rp 7.000.000</h4>
+                        <p class="product-old-price"><del>Rp 14.000.000</del></p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="product-utility">
+                        <button class="product-cart">Add to Cart</button>
+                        <div class="like-share-compare">
+                            <div><i class="fa-solid fa-share-nodes"></i>Share</div>
+                            <div><i class="fa-solid fa-code-compare"></i>Compare</div>
+                            <div><i class="fa-solid fa-heart" class="heart"></i>Like</div>
+                        </div>
+                    </div>
+                    <div class="product-container" id="respira">
+                        <img class="product-image" src="respira.png" alt="Respira">
+                        <div class="new"><span><p>New</p></span></div>
+    
+                        <h3 class="product-name">Respira</h3>
+                        <p class="product-description">Outdoor bar table and stool</p>
+                        <h4 class="product-price">Rp 500.000</h4>
+                    </div>
                 </div>
             </div>
+            
+            <div class="product-container1" id="product-container3"></div>
+            
+            <button id="showmore-button" class="show-more-button">Show More</button>
         </section>
-
-        <button id="show-more-button">Show More</button>
     </main>
 
     <footer>
 
         <hr>
 
-        <h3 id="footer-heading-1">Furniro.</h3>
+        <div class="foot">
+            <div id="name-address">
+                <h3 id="footer-heading-1">Furniro.</h3>
 
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-
-        <nav id="footer-nav">
+                <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+            </div>
+            
             <div class="footer-nav-container" id="footer-link-nav">
-                <p class="footer-nav-heading">Links</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Links</p></li>
                     <li><a class="footer-nav-link" href="index.html">Home</a></li>
                     <li><a class="footer-nav-link" href="shop.html">Shop</a></li>
-                    <li><a class="footer-nav-link" href="about.html">About</a></li>
+                    <li><a class="footer-nav-link" href="blog.html">About</a></li>
                     <li><a class="footer-nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-nav-container" id="footer-help-nav">
-                <p class="footer-nav-heading">Helps</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Helps</p></li>
                     <li><a class="footer-nav-link" href="Payment-Options.html">Payment Options</a></li>
                     <li><a class="footer-nav-link" href="Returns.html">Returns</a></li>
                     <li><a class="footer-nav-link" href="Privacy-Policies.html">Privacy Policies</a></li>
@@ -153,10 +205,9 @@
                 <input type="text" placeholder="Enter Your Email Address">
                 <button id="subscribe-button">SUBSCRIBE</button>
             </form>
-
-        </nav>
-
-        <hr>
+        </div>
+        
+        <hr width="91%">
 
         <p id="copy-right">2023 furniro. All rights reverved</p>
 
