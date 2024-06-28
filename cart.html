@@ -9,18 +9,18 @@
 
     <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="cart.css">
+
 </head>
 
 <body>
-    <header>
-        <div id="page-logo">
-            <a href="index.html">
-                <img id="brand-image" src="logo.png" alt="Furniro icon">
-                <h1 id="brand-name">Furniro</h1>
-            </a>
+    <header class="header">
+        <div id="page-logo" class="nav-bar">
+            <a class="nav-bar-logo" href="index.html"><img id="brand-image" src="logo.png" alt="Furniro icon"></a>
+            <a id="brand-name" class="nav-bar-logo" href="index.html"><h1>Furniro</h1></a>
         </div>
 
-        <nav id="page-nav">
+        <nav id="page-nav" class="nav-bar">
             <ul id="page-nv-list">
                 <li><a href="index.html" id="home-link" class="top-page-link">Home</a></li>
                 <li><a href="shop.html" id="shop-link" class="top-page-link">Shop</a></li>
@@ -28,13 +28,13 @@
                 <li><a href="contact.html" id="contact-link" class="top-page-link">Contact</a></li>
             </ul>
         </nav>
-
-        <nav id="support-nav">
+        
+        <nav id="support-nav" class="nav-bar">
             <ul id="support-nav-list">
-                <li><a href=""><span class="material-symbols-outlined">person-alert</span></a></li>
-                <li><a href="blog.html"><span class="material-symbols-outlined">search</span></a></li>
+                <li><a href=""><img src="user.png" alt=""></a></li>
+                <li><a href=""><span class="material-symbols-outlined">search</span></a></li>
                 <li><a href=""><span class="material-symbols-outlined">favorite</span></a></li>
-                <li><a href="cart.html"><span class="material-symbols-outlined">shopping-cart</span></a></li>
+                <li><a href="cart.html"><img src="cart.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -42,115 +42,136 @@
     <main>
         <section id="hero">
             <div id="hero-inform-box">
-                <img src="logo.png" alt="page-logo">
+                <img id="hero-icon" src="logo.png" alt="page-logo">
                 <h1 id="hero-box-heading-1">Cart</h1>
                 <p id="hero-box-description"><b>Home ></b> Cart</p>
             </div>
         </section>
 
+        <img id="hero1" src="hero'.png" alt="">
+
         <section id="section-6">
-            <div id="sec-6-infor">
-                <ul id="sec-6-infor-heading-row">
-                    <li class="sec-6-infor-heading">Product</li>
-                    <li class="sec-6-infor-heading">Price</li>
-                    <li class="sec-6-infor-heading">Quantity</li>
-                    <li class="sec-6-infor-heading">Subtotal</li>
-                </ul>
+            <div id="sec-6-left">
+                <div id="sec-6-infor-heading-row" class="sec-6-left">
+                    <div></div>
+                    <div class="sec-6-infor-heading">Product</div>
+                    <div class="sec-6-infor-heading">Price</div>
+                    <div class="sec-6-infor-heading">Quantity</div>
+                    <div class="sec-6-infor-heading">Subtotal</div>
+                    <div></div>
+                </div>
+
+                <div id="sec-6-product-infor" class="sec-6-left">
+                    <div><img id="sec-6-product-infor-img" src="Asgaard sofa 5.png" alt="sofa"></div>
+                    <div class="sec-6-product-infor-row sec-6-product-1">Asgaard sofa</div>
+                    <div class="sec-6-product-infor-row sec-6-product-1">Rs. 250,000.00</div>
+                    <div class="sec-6-product-infor-row">
+                        <form action="" method="get">
+                            <input id="quantity" type="number">
+                        </form>
+                    </div>
+                    <div class="sec-6-product-infor-row">Rs. 250,000.00</div>
+                    <div ><img id="bin-button" src="bin.png" alt="delete"></div>
+                </div>
             </div>
 
-            <div id="sec-6-product-infor">
-                <img class="sec-6-product-infor-image" src="Asgaard sofa 5.png" alt="sofa">
-                <ul id="sec-6-product-information-row">
-                    <li class="sec-6-product-infor-row">Asgaard sofa</li>
-                    <li class="sec-6-product-infor-row">Rs. 250,000.00</li>
-                    <li class="sec-6-product-infor-row"><form action="" method="get">
-                        <input type="number">
-                    </form></li>
-                    <li class="sec-6-product-infor-row"><b>Rs. 250,000.00</b></li>
-                </ul>
-                <img src="bin.png" alt="delete">
-            </div>
-        </section>
-
-        <section id="section-7">
-            <h3 id="sec-7-heading">Cart Totals</h3>
+            <div id="sec-6-right">
+                <h3 id="sec-6-heading">Cart Totals</h3>
             
-            <ul id="sec-7-list1">
-                <li id="sec-7-subtotal1">Subtotal</li>
-                <li id="sec-7-total1">Total</li>
-            </ul>
-            <ul id="sec-7-list2">
-                <li id="sec-7-subtotal2">Rs. 250,000.00</li>
-                <li id="sec-7-total2"><h4><b>Rs. 250,000.00</b></h4></li>
-            </ul>
+                <div id="sec-6-right-cont">
+                    <div>
+                        <ul id="sec-6-list1">
+                            <li id="sec-6-subtotal1">Subtotal</li>
+                            <li id="sec-7-total1">Total</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="sec-6-list2">
+                            <li id="sec-6-subtotal2">Rs. 250,000.00</li>
+                            <li id="sec-6-total2"><b>Rs. 250,000.00</b></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button id="check-out-button">Check Out</button>
+            </div>
         </section>
 
         <section id="section-5">
-            <div id="sec-5-high-quality">
-                <img src="trophy.png" alt="trophy">
-                <h3 id="sec-5-high-quality-heading" class="sec-5-heading">High Quality</h3>
-                <p id="sec-5-high-quality-description" class="sec-5-description">crafted from top materials</p>
-            </div>
+            <div class="section-5">
+                <div class="sec-5">
+                    <div><img src="trophy.png" alt="trophy"></div>
+                    <div>
+                        <h3 id="sec-5-high-quality-heading" class="sec-5-heading">High Quality</h3>
+                        <p id="sec-5-high-quality-description" class="sec-5-description">crafted from top materials</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-quarranty-protection">
-                <img src="quarrantyprotection.png" alt="quarrantyprotection">
-                <h3 id="sec-5-quarranty-protection-heading" class="sec-5-heading">Quarranty Protection</h3>
-                <p id="sec-5-quarranty-protection-description" class="sec-5-description">Over 2 years</p>
-            </div>
+                <div class="sec-5">
+                    <div><img src="quarrantyprotection.png" alt="quarrantyprotection"></div>
+                    <div>
+                        <h3 id="sec-5-quarranty-protection-heading" class="sec-5-heading">Quarranty Protection</h3>
+                        <p id="sec-5-quarranty-protection-description" class="sec-5-description">Over 2 years</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-free-shipping">
-                <img src="freeshipping.png" alt="freeshipping">
-                <h3 id="sec-5-free-shipping-heading" class="sec-5-heading">Free Shipping</h3>
-                <p id="sec-5-free-shipping-description" class="sec-5-description">Order over 150 $</p>
-            </div>
+                <div class="sec-5">
+                    <div><img src="freeshipping.png" alt="freeshipping"></div>
+                    <div>
+                        <h3 id="sec-5-free-shipping-heading" class="sec-5-heading">Free Shipping</h3>
+                        <p id="sec-5-free-shipping-description" class="sec-5-description">Order over 150 $</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-24/7-support">
-                <img src="247.png" alt="24/7support">
-                <h3 id="sec-5-24/7-support-heading" class="sec-5-heading">24/7 Support</h3>
-                <p id="sec-5-24/7-support-description" class="sec-5-description">Dedicated support</p>
+                <div class="sec-5">
+                    <div><img src="247.png" alt="24/7support"></div>
+                    <div>
+                        <h3 id="sec-5-24/7-support-heading" class="sec-5-heading">24/7 Support</h3>
+                        <p id="sec-5-24/7-support-description" class="sec-5-description">Dedicated support</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+    
+        <div class="foot">
+            <div id="name-address">
+                <h3 id="footer-heading-1">Furniro.</h3>
 
-        <hr>
-    
-        <h3 id="footer-heading-1">Furniro.</h3>
-    
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-    
-        <nav id="footer-nav">
+                <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+            </div>
+            
             <div class="footer-nav-container" id="footer-link-nav">
-                <p class="footer-nav-heading">Links</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Links</p></li>
                     <li><a class="footer-nav-link" href="index.html">Home</a></li>
                     <li><a class="footer-nav-link" href="shop.html">Shop</a></li>
-                    <li><a class="footer-nav-link" href="about.html">About</a></li>
+                    <li><a class="footer-nav-link" href="blog.html">About</a></li>
                     <li><a class="footer-nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer-nav-container" id="footer-help-nav">
-                <p class="footer-nav-heading">Helps</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Helps</p></li>
                     <li><a class="footer-nav-link" href="Payment-Options.html">Payment Options</a></li>
                     <li><a class="footer-nav-link" href="Returns.html">Returns</a></li>
                     <li><a class="footer-nav-link" href="Privacy-Policies.html">Privacy Policies</a></li>
                 </ul>
             </div>
-    
+
             <form class="footer-nav-container" action="" method="get">
                 <p class="footer-nav-heading">Newsletter</p>
-                <input type="text" placeholder="Enter Your Email Address">
+                <input id="email" type="text" placeholder="Enter Your Email Address">
                 <button id="subscribe-button">SUBSCRIBE</button>
             </form>
-    
-        </nav>
-    
-        <hr>
-    
+        </div>
+        
+        <hr width="91%">
+
         <p id="copy-right">2023 furniro. All rights reverved</p>
-    
+
     </footer>
 </body>
