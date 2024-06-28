@@ -218,6 +218,11 @@ input:focus {outline: none;}
 
 #Filter  {margin: 0; width: 35px;}
 
+#filter-area {
+    border-right: 2px solid #9F9F9F;
+    height: 40px;
+}
+
 #num {
     width: 20px;
     padding: 5px 10px 5px 15px;  
