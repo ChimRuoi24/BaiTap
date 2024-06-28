@@ -9,33 +9,33 @@
 
     <link rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <header>
-        <div id="page-logo">
-            <a href="index.html">
-                <img id="brand-image" src="logo.png" alt="Furniro icon">
-                <h1 id="brand-name">Furniro</h1>
-            </a>
+    <header class="header">
+        <div id="page-logo" class="nav-bar">
+            <a class="nav-bar-logo" href="index.html"><img id="brand-image" src="logo.png" alt="Furniro icon"></a>
+            <a id="brand-name" class="nav-bar-logo" href="index.html"><h1>Furniro</h1></a>
         </div>
-        
-        <nav id="page-nav">
+
+        <nav id="page-nav" class="nav-bar">
             <ul id="page-nv-list">
                 <li><a href="index.html" id="home-link" class="top-page-link">Home</a></li>
                 <li><a href="shop.html" id="shop-link" class="top-page-link">Shop</a></li>
-                <li><a href="about.html" id="about-link" class="top-page-link">About</a></li>
+                <li><a href="blog.html" id="about-link" class="top-page-link">About</a></li>
                 <li><a href="contact.html" id="contact-link" class="top-page-link">Contact</a></li>
             </ul>
         </nav>
-
-        <nav id="support-nav">
+        
+        <nav id="support-nav" class="nav-bar">
             <ul id="support-nav-list">
-                <li><a href=""><span class="material-symbols-outlined">person-alert</span></a></li>
-                <li><a href="blog.html"><span class="material-symbols-outlined">search</span></a></li>
+                <li><a href=""><img src="user.png" alt=""></a></li>
+                <li><a href=""><span class="material-symbols-outlined">search</span></a></li>
                 <li><a href=""><span class="material-symbols-outlined">favorite</span></a></li>
-                <li><a href="cart.html"><span class="material-symbols-outlined">shopping-cart</span></a></li>
+                <li><a href="cart.html"><img src="cart.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
@@ -43,130 +43,147 @@
     <main>
         <section id="hero">
             <div id="hero-inform-box">
-                <img src="logo.png" alt="page-logo">
+                <img id="hero-icon" src="logo.png" alt="page-logo">
                 <h1 id="hero-box-heading-1">Blog</h1>
                 <p id="hero-box-description"><b>Home ></b> Blog</p>
             </div>
         </section>
 
-        <section id="section-8">
-            <div id="blog1" class="blog">
-                <img id="blog1-image" class="blog-img" src="blog1.png" alt="">
-                <span id="blog1-infor" class="blog-infor">
-                    <ul>
-                        <li id="blog1-author">
-                            <img src="author.png" alt="">
-                            <p>Admin</p>
-                        </li>
-                        <li id="blog1-date">
-                            <img src="date.png" alt="">
-                            <p>14 Oct 2022</p>
-                        </li>
-                        <li id="blog1-tag">
-                            <img src="tag.png" alt="">
-                            <p>Wood</p>
-                        </li>
-                    </ul>
-                </span>
-                <h2 id="blog1-heading" class="blog-head">Going all-in with millennial design</h2>
-                <p id="blog1-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
-                <button id="blog1-readmore" class="readmore">Read more</button>
+        <img id="hero1" src="hero'.png" alt="">
+
+        <section id="blog-container">
+            <div id="section-8">
+                <div id="blog1" class="blog">
+                    <img id="blog1-image" class="blog-img" src="blog1.png" alt="">
+                    <div id="blog1-infor" class="blog-infor">
+                            <div id="blog1-author">
+                                <img src="author.png" alt="">   Admin
+                            </div>
+                            <div id="blog1-date">
+                                <img src="date.png" alt="">   14 Oct 2022
+                            </div>
+                            <div id="blog1-tag">
+                                <img src="tag.png" alt="">  Wood
+                            </div>
+                    </div>
+                    <h2 id="blog1-heading" class="blog-head">Going all-in with millennial design</h2>
+                    <p id="blog1-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+                    <button id="blog1-readmore" class="readmore">Read more</button>
+                </div>
+    
+                <div id="blog2" class="blog">
+                    <img id="blog2-image" class="blog-img" src="blog2.png" alt="">
+                    <span id="blog2-infor" class="blog-infor">
+                            <div id="blog2-author">
+                                <img src="author.png" alt=""> Admin
+                            </div>
+                            <div id="blog2-date">
+                                <img src="date.png" alt=""> 14 Oct 2022
+                            </div>
+                            <div id="blog2-tag">
+                                <img src="tag.png" alt=""> Handmade
+                            </div>
+                    </span>
+                    <h2 id="blog2-heading" class="blog-head">Exploring new ways of decorating</h2>
+                    <p id="blog2-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+                    <button id="blog-2-readmore" class="readmore">Read more</button>
+                </div>
+    
+                <div id="blog3" class="blog">
+                    <img id="blog3-image" class="blog-img" src="blog3.png" alt="">
+                    <span id="blog3-infor" class="blog-infor">
+                            <div id="blog3-author">
+                                <img src="author.png" alt=""> Admin
+                            </div>
+                            <div id="blog3-date">
+                                <img src="date.png" alt=""> 14 Oct 2022
+                            </div>
+                            <div id="blog3-tag">
+                                <img src="tag.png" alt=""> Wood
+                            </div>
+                    </span>
+                    <h2 id="blog3-heading" class="blog-head">Handmade pieces that took time to make</h2>
+                    <p id="blog3-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+                    <button id="blog3-readmore" class="readmore">Read more</button>
+                </div>
             </div>
-
-            <div id="blog2" class="blog">
-                <img id="blog2-image" class="blog-img" src="blog2.png" alt="">
-                <span id="blog2-infor" class="blog-infor">
-                    <ul>
-                        <li id="blog2-author">
-                            <img src="author.png" alt="">
-                            <p>Admin</p>
-                        </li>
-                        <li id="blog2-date">
-                            <img src="date.png" alt="">
-                            <p>14 Oct 2022</p>
-                        </li>
-                        <li id="blog2-tag">
-                            <img src="tag.png" alt="">
-                            <p>Handmade</p>
-                        </li>
-                    </ul>
-                </span>
-                <h2 id="blog2-heading" class="blog-head">Exploring new ways of decorating</h2>
-                <p id="blog2-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
-                <button id="blog-2-readmore" class="readmore">Read more</button>
-            </div>
-
-            <div id="blog3" class="blog">
-                <img id="blog3-image" class="blog-img" src="blog3.png" alt="">
-                <span id="blog3-infor" class="blog-infor">
-                    <ul>
-                        <li id="blog3-author">
-                            <img src="author.png" alt="">
-                            <p>Admin</p>
-                        </li>
-                        <li id="blog3-date">
-                            <img src="date.png" alt="">
-                            <p>14 Oct 2022</p>
-                        </li>
-                        <li id="blog3-tag">
-                            <img src="tag.png" alt="">
-                            <p>Wood</p>
-                        </li>
-                    </ul>
-                </span>
-                <h2 id="blog3-heading" class="blog-head">Handmade pieces that took time to make</h2>
-                <p id="blog3-content" class="blog-cont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
-                <button id="blog3-readmore" class="readmore">Read more</button>
-            </div>
-        </section>
-
-        <section id="section-9">
-            <form id="sec-form" action="" method="get">
-                <input type="text" id="search-text">
-                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-
-            <h3 id="sec-9-heading">Categories</h3>
-            <ul id="sec-9-list">
-                <li class="sec-9-tag">Crafts</li>
-                <li class="sec-9-tag">Design</li>
-                <li class="sec-9-tag">Handmade</li>
-                <li class="sec-9-tag">Interior</li>
-                <li class="sec-9-tag">Wood</li>
-            </ul>
-        </section>
-
-        <section id="section-10">
-            <h3 id="sec-10-heading">Recent Posts</h3>
+    
+            <div id="right">
+                <div id="right-search-box">
+                    <form id="sec-form" action="" method="get">
+                        <input type="text" id="search-text">
+                        <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div id="section-9" class="right-cont">
+                    <h3 id="sec-9-heading" class="right-heading">Categories</h3>
+                    <div class="cat-list">
+                        <div class="sec-9-list">
+                            <ul id="sec-9-tags">
+                                <li class="sec-9-tag">Crafts</li>
+                                <li class="sec-9-tag">Design</li>
+                                <li class="sec-9-tag">Handmade</li>
+                                <li class="sec-9-tag">Interior</li>
+                                <li class="sec-9-tag">Wood</li>
+                            </ul>
+                        </div>
+                        <div class="sec-9-list">
+                            <ul id="sec-9-numbers">
+                                <li class="sec-9-tag">2</li>
+                                <li class="sec-9-tag">8</li>
+                                <li class="sec-9-tag">7</li>
+                                <li class="sec-9-tag">1</li>
+                                <li class="sec-9-tag">6</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="section-10" class="right-cont">
+                    <h3 id="sec-10-heading" class="right-heading">Recent Posts</h3>
+                    
+                    <div class="small-blog-container">
+                        <div id="blog-1" class="small-blog">
+                            <div><img id="blog-1-image" class="blog-image" src="blog-1.png" alt=""></div>
+                            <div>
+                                <h4 id="blog-1-heading" class="blog-heading">Going all-in with millennial design</h4>
+                                <p id="blog-1-date" class="blog-date">03 Aug 2022</p>
+                            </div>
+                        </div>
             
-            <div id="blog-1">
-                <img id="blog-1-image" class="blog-image" src="blog-1.png" alt="">
-                <h4 id="blog-1-heading" class="blog-heading">Going all-in with millennial design</h4>
-                <p id="blog-1-date" class="blog-date">03 Aug 2022</p>
-            </div>
-
-            <div id="blog-2">
-                <img id="blog-2-image" class="blog-image" src="blog-2.png" alt="">
-                <h4 id="blog-2-heading" class="blog-heading">Exploring new ways of decorating</h4>
-                <p id="blog-2-date" class="blog-date">03 Aug 2022</p>
-            </div>
-
-            <div id="blog-3">
-                <img id="blog-3-image" class="blog-image" src="blog-3.png" alt="">
-                <h4 id="blog-3-heading" class="blog-heading">Handmade pieces that took time to make</h4>
-                <p id="blog-3-date" class="blog-date">03 Aug 2022</p>
-            </div>
-
-            <div id="blog-4">
-                <img id="blog-4-image" class="blog-image" src="blog-4.png" alt="">
-                <h4 id="blog-4-heading" class="blog-heading">Modern home in Milan</h4>
-                <p id="blog-4-date" class="blog-date">03 Aug 2022</p>
-            </div>
-
-            <div id="blog-5">
-                <img id="blog-5-image" class="blog-image" src="blog-5.png" alt="">
-                <h4 id="blog-5-heading" class="blog-heading">Colorful office redesign</h4>
-                <p id="blog-5-date" class="blog-date">03 Aug 2022</p>
+                        <div id="blog-2" class="small-blog">
+                            <div><img id="blog-2-image" class="blog-image" src="blog-2.png" alt=""></div>
+                            <div>
+                                <h4 id="blog-2-heading" class="blog-heading">Exploring new ways of decorating</h4>
+                                <p id="blog-2-date" class="blog-date">03 Aug 2022</p>
+                            </div>
+                        </div>
+            
+                        <div id="blog-3" class="small-blog">
+                            <div><img id="blog-3-image" class="blog-image" src="blog-3.png" alt=""></div>
+                            <div>
+                                <h4 id="blog-3-heading" class="blog-heading">Handmade pieces that took time to make</h4>
+                                <p id="blog-3-date" class="blog-date">03 Aug 2022</p>
+                            </div>
+                        </div>
+            
+                        <div id="blog-4" class="small-blog">
+                            <div><img id="blog-4-image" class="blog-image" src="blog-4.png" alt=""></div>
+                            <div>
+                                <h4 id="blog-4-heading" class="blog-heading">Modern home in Milan</h4>
+                                <p id="blog-4-date" class="blog-date">03 Aug 2022</p>
+                            </div>
+                        </div>
+            
+                        <div id="blog-5" class="small-blog">
+                            <div><img id="blog-5-image" class="blog-image" src="blog-5.png" alt=""></div>
+                            <div>
+                                <h4 id="blog-5-heading" class="blog-heading">Colorful office redesign</h4>
+                                <p id="blog-5-date" class="blog-date">03 Aug 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -178,72 +195,81 @@
         </section>
 
         <section id="section-5">
-            <div id="sec-5-high-quality">
-                <img src="trophy.png" alt="trophy">
-                <h3 id="sec-5-high-quality-heading" class="sec-5-heading">High Quality</h3>
-                <p id="sec-5-high-quality-description" class="sec-5-description">crafted from top materials</p>
-            </div>
+            <div class="section-5">
+                <div class="sec-5">
+                    <div><img src="trophy.png" alt="trophy"></div>
+                    <div>
+                        <h3 id="sec-5-high-quality-heading" class="sec-5-heading">High Quality</h3>
+                        <p id="sec-5-high-quality-description" class="sec-5-description">crafted from top materials</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-quarranty-protection">
-                <img src="quarrantyprotection.png" alt="quarrantyprotection">
-                <h3 id="sec-5-quarranty-protection-heading" class="sec-5-heading">Quarranty Protection</h3>
-                <p id="sec-5-quarranty-protection-description" class="sec-5-description">Over 2 years</p>
-            </div>
+                <div class="sec-5">
+                    <div><img src="quarrantyprotection.png" alt="quarrantyprotection"></div>
+                    <div>
+                        <h3 id="sec-5-quarranty-protection-heading" class="sec-5-heading">Quarranty Protection</h3>
+                        <p id="sec-5-quarranty-protection-description" class="sec-5-description">Over 2 years</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-free-shipping">
-                <img src="freeshipping.png" alt="freeshipping">
-                <h3 id="sec-5-free-shipping-heading" class="sec-5-heading">Free Shipping</h3>
-                <p id="sec-5-free-shipping-description" class="sec-5-description">Order over 150 $</p>
-            </div>
+                <div class="sec-5">
+                    <div><img src="freeshipping.png" alt="freeshipping"></div>
+                    <div>
+                        <h3 id="sec-5-free-shipping-heading" class="sec-5-heading">Free Shipping</h3>
+                        <p id="sec-5-free-shipping-description" class="sec-5-description">Order over 150 $</p>
+                    </div>
+                </div>
 
-            <div id="sec-5-24/7-support">
-                <img src="247.png" alt="24/7support">
-                <h3 id="sec-5-24/7-support-heading" class="sec-5-heading">24/7 Support</h3>
-                <p id="sec-5-24/7-support-description" class="sec-5-description">Dedicated support</p>
+                <div class="sec-5">
+                    <div><img src="247.png" alt="24/7support"></div>
+                    <div>
+                        <h3 id="sec-5-24/7-support-heading" class="sec-5-heading">24/7 Support</h3>
+                        <p id="sec-5-24/7-support-description" class="sec-5-description">Dedicated support</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+    
+        <div class="foot">
+            <div id="name-address">
+                <h3 id="footer-heading-1">Furniro.</h3>
 
-        <hr>
-    
-        <h3 id="footer-heading-1">Furniro.</h3>
-    
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-    
-        <nav id="footer-nav">
+                <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+            </div>
+            
             <div class="footer-nav-container" id="footer-link-nav">
-                <p class="footer-nav-heading">Links</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Links</p></li>
                     <li><a class="footer-nav-link" href="index.html">Home</a></li>
                     <li><a class="footer-nav-link" href="shop.html">Shop</a></li>
-                    <li><a class="footer-nav-link" href="about.html">About</a></li>
+                    <li><a class="footer-nav-link" href="blog.html">About</a></li>
                     <li><a class="footer-nav-link" href="contact.html">Contact</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer-nav-container" id="footer-help-nav">
-                <p class="footer-nav-heading">Helps</p>
                 <ul class="footer-nav-lists">
+                    <li><p class="footer-nav-heading">Helps</p></li>
                     <li><a class="footer-nav-link" href="Payment-Options.html">Payment Options</a></li>
                     <li><a class="footer-nav-link" href="Returns.html">Returns</a></li>
                     <li><a class="footer-nav-link" href="Privacy-Policies.html">Privacy Policies</a></li>
                 </ul>
             </div>
-    
+
             <form class="footer-nav-container" action="" method="get">
                 <p class="footer-nav-heading">Newsletter</p>
                 <input type="text" placeholder="Enter Your Email Address">
                 <button id="subscribe-button">SUBSCRIBE</button>
             </form>
-    
-        </nav>
-    
-        <hr>
-    
+        </div>
+        
+        <hr width="91%">
+
         <p id="copy-right">2023 furniro. All rights reverved</p>
-    
+
     </footer>
 </body>
 
