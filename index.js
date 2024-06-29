@@ -35,7 +35,7 @@ function genprod(product) {
             <div class="like-share-compare">
                 <div><i class="fa-solid fa-share-nodes"></i>Share</div>
                 <div><i class="fa-solid fa-code-compare"></i>Compare</div>
-                <div><i class="fa-regular fa-heart" class="heart"></i>Like</div>
+                <div><i class="fa-regular fa-heart" onclick="style.color = '#DC143C'"></i>Like</div>
             </div>
         </div>
 
@@ -60,32 +60,7 @@ function genprod(product) {
             <div class="like-share-compare">
                 <div><i class="fa-solid fa-share-nodes"></i>Share</div>
                 <div><i class="fa-solid fa-code-compare"></i>Compare</div>
-                <div><i class="fa-regular fa-heart" class="heart"></i>Like</div>
-            </div>
-        </div>
-
-        <div class = "product-container">
-            <img class="product-image" src="${product.image}" alt="${product.name}">
-            <p class="product-discount">${product.discount ? `-${product.discount}%` : ""}</p>
-            <p class="product-tag">${product.tag ? `${product.tag}` : ""}</p>
-
-            <div class = "product-info">
-                <h3 class="product-name">${product.name}</h3>
-                <p class="product-description">${product.short_desc}</p>
-                <h4 class="product-price">${product.unit_price} ${product.price}</h4>
-                <p class="product-old-price"><del>${product.old_price ? `${product.unit_price} ${product.old_price}` : ""}</del></p>
-            </div>
-        </div>
-        <br></br>
-    </div>
-    
-    <div class="product-container2" id="${product.name}"> 
-        <div class="product-utility">
-            <button class="product-cart">Add to Cart</button>
-            <div class="like-share-compare">
-                <div><i class="fa-solid fa-share-nodes"></i>Share</div>
-                <div><i class="fa-solid fa-code-compare"></i>Compare</div>
-                <div><i class="fa-regular fa-heart" class="heart"></i>Like</div>
+                <div><i class="fa-regular fa-heart" onclick="style.color = '#DC143C'"></i>Like</div>
             </div>
         </div>
 
@@ -110,7 +85,32 @@ function genprod(product) {
             <div class="like-share-compare">
                 <div><i class="fa-solid fa-share-nodes"></i>Share</div>
                 <div><i class="fa-solid fa-code-compare"></i>Compare</div>
-                <div><i class="fa-solid fa-heart" class="heart" id="tim"></i>Like</div>
+                <div><i class="fa-regular fa-heart" onclick="style.color = '#DC143C'"></i>Like</div>
+            </div>
+        </div>
+
+        <div class = "product-container">
+            <img class="product-image" src="${product.image}" alt="${product.name}">
+            <p class="product-discount">${product.discount ? `-${product.discount}%` : ""}</p>
+            <p class="product-tag">${product.tag ? `${product.tag}` : ""}</p>
+
+            <div class = "product-info">
+                <h3 class="product-name">${product.name}</h3>
+                <p class="product-description">${product.short_desc}</p>
+                <h4 class="product-price">${product.unit_price} ${product.price}</h4>
+                <p class="product-old-price"><del>${product.old_price ? `${product.unit_price} ${product.old_price}` : ""}</del></p>
+            </div>
+        </div>
+        <br></br>
+    </div>
+    
+    <div class="product-container2" id="${product.name}"> 
+        <div class="product-utility">
+            <button class="product-cart">Add to Cart</button>
+            <div class="like-share-compare">
+                <div><i class="fa-solid fa-share-nodes"></i>Share</div>
+                <div><i class="fa-solid fa-code-compare"></i>Compare</div>
+                <div><i class="fa-solid fa-heart" onclick="style.color = '#DC143C'"></i>Like</div>
             </div>
         </div>
 
@@ -178,32 +178,3 @@ showMoreBtn.onclick = () => {
 
 
 //fill heart
-let heart1 = document.getElementById('tim1');
-
-heart1.onclick = () => {
-    heart1.style.color = 'rgb(189, 32, 69)';
-};
-
-let heart2 = document.getElementById('tim2');
-
-heart2.onclick = () => {
-    heart2.style.color = 'rgb(189, 32, 69)';
-};2
-
-let heart3 = document.getElementById('tim3');
-
-heart3.onclick = () => {
-    heart3.style.color = 'rgb(189, 32, 69)';
-};
-
-let heart4 = document.getElementById('tim4');
-
-heart4.onclick = () => {
-    heart4.style.color = 'rgb(189, 32, 69)';
-};
-
-let heart = document.getElementById('tim');
-
-heart.onclick = () => {
-    heart.style.color = 'rgb(189, 32, 69)';
-};
