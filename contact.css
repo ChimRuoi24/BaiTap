@@ -195,6 +195,7 @@ input:focus {outline: none;}
     margin-bottom: 0;
 }
 
+#hero-inform-box {justify-content: center;}
 
 /*section-5*/
 .section-5 {
