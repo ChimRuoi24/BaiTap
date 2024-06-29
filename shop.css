@@ -189,6 +189,9 @@ input:focus {outline: none;}
     margin-top: 10px;
 }
 
+#hero-inform-box {justify-content: center;}
+
+
 /*section-12*/
 #filter {
     margin-top: 130px;
