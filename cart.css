@@ -189,6 +189,8 @@ input:focus {outline: none;}
     margin-top: 10px;
 }
 
+#hero-inform-box {justify-content: center;}
+
 #hero-icon {
     margin-left: 600px;
     margin-top: 90px;
