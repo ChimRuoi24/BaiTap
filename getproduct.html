@@ -15,7 +15,7 @@
 
     <script>
         const getProduct = async () => {
-            const response = await fetch(`https://dummyapi-0uzr.onrender.com/products`);
+            const response = await fetch(`http://localhost:80/products`);
             //console.log('check response: ', response)
             if (response && response.status !== 200) {
                 throw new Error(`Something's wrong with status code: ` + response.status)
