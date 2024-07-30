@@ -138,7 +138,7 @@ async function loadprod() {
         var sth = JSON.parse(sessionStorage.getItem("products"));
         return sth;
     }
-    resp = await fetch("https://dummyapi-0uzr.onrender.com/products"); 
+    resp = await fetch("http://localhost:80/products"); 
     let prod = await resp.json(); 
 
     prod = prod.product_list;
